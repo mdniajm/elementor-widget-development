@@ -46,7 +46,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			]
             );
 		
-		$this->add_control(
+		$this->add_responsive_control(
 			'size',
 			[
 				'type' => \Elementor\Controls_Manager::NUMBER,
@@ -66,9 +66,14 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 		
 
+		
+
 
 
 		$this->end_controls_section();
+
+
+
 
 		$this->start_controls_section(
 			'style_section',
@@ -78,7 +83,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			]
 		);
 
-		$this->add_control(
+		$this->add_responsive_control(
 			'alignment',
 			[
 				'type' => \Elementor\Controls_Manager::CHOOSE,
